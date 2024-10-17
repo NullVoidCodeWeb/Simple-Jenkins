@@ -9,7 +9,8 @@ pipeline{
 
         stage("Test"){
             steps{
-                sh 'sudo apt-get install npm'
+                // sh 'sudo apt-get install npm'
+                echo "GravityGravity28" | sudo -S apt install npm
                 sh 'npm test'
             }
         }
